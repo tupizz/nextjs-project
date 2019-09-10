@@ -1,11 +1,28 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import MainLayout from '../src/layouts/MainLayout';
 
-// import { Container } from './styles';
-
-export default function Home() {
+export default function Home({ user }) {
   return (
-    <div>
-      <h1>Hello World</h1>
-    </div>
+    <MainLayout>
+      <h1>Hello World {user.name}</h1>
+    </MainLayout>
   );
 }
+
+Home.propTypes = {
+  user: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    lastname: PropTypes.string.isRequired,
+  }).isRequired,
+};
+
+// Feito pelo nextjs do lado do servidor
+Home.getInitialProps = async () => {
+  return {
+    user: {
+      name: 'Tadeu',
+      lastname: 'Tupinambá',
+    },
+  };
+};
