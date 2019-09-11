@@ -11,6 +11,7 @@ export default function Header() {
         <Link href="/">
           <a>Home</a>
         </Link>
+
         <Link href="/contact">
           <a>Contact</a>
         </Link>
