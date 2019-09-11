@@ -5,10 +5,13 @@ import Header from '../../components/Header';
 
 import { Container } from './styles';
 
+import GlobalStyle from '../../styles/global';
+
 export default function MainLayout({ children }) {
   return (
     <Container>
       <Header />
+      <GlobalStyle />
       {children}
     </Container>
   );

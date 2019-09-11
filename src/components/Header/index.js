@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-
 import { Container } from './styles';
 
 export default function Header() {
@@ -11,15 +10,11 @@ export default function Header() {
         <Link href="/">
           <a>Home</a>
         </Link>
-
         <Link href="/contact">
           <a>Contact</a>
         </Link>
-        <Link href="/">
-          <a>About</a>
-        </Link>
-        <Link href="/">
-          <a>Users</a>
+        <Link href="/styles">
+          <a>Styles</a>
         </Link>
       </nav>
     </Container>

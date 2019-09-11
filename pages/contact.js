@@ -8,3 +8,7 @@ export default function Contact() {
     </MainLayout>
   );
 }
+
+Contact.getInitialProps = ({ pathname }) => {
+  return { pathname };
+};
