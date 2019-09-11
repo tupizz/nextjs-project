@@ -5,16 +5,15 @@ import { Container } from './styles';
 export default function Header() {
   return (
     <Container>
-      <h3>First application with Nextjs</h3>
       <nav>
         <Link href="/">
-          <a>Home</a>
+          <a>Início</a>
         </Link>
         <Link href="/contact">
-          <a>Contact</a>
+          <a>Contato</a>
         </Link>
-        <Link href="/styles">
-          <a>Styles</a>
+        <Link href="/skills">
+          <a>Habilidades</a>
         </Link>
       </nav>
     </Container>

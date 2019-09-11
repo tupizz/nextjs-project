@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import Header from '../../components/Header';
 
-import { Container } from './styles';
+import { Container, ChildrenContainer } from './styles';
 
 import GlobalStyle from '../../styles/global';
 
@@ -12,7 +12,8 @@ export default function MainLayout({ children }) {
     <Container>
       <Header />
       <GlobalStyle />
-      {children}
+
+      <ChildrenContainer>{children}</ChildrenContainer>
     </Container>
   );
 }
